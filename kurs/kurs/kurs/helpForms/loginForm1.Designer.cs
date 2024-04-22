@@ -103,17 +103,7 @@
             this.passbox.Size = new System.Drawing.Size(360, 57);
             this.passbox.TabIndex = 4;
             this.passbox.UseSystemPasswordChar = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::kurs.Properties.Resources._299105_lock_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(41, 295);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 90);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            
             // 
             // loginBox
             // 
@@ -124,17 +114,7 @@
             this.loginBox.Name = "loginBox";
             this.loginBox.Size = new System.Drawing.Size(360, 72);
             this.loginBox.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::kurs.Properties.Resources._1564534_customer_man_user_account_profile_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(41, 182);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            
             // 
             // panel2
             // 

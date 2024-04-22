@@ -16,5 +16,20 @@ namespace kurs.FormsForTeamlead
         {
             InitializeComponent();
         }
+
+        private void GoToBackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            mainMenuForTeamLead mainForm = new mainMenuForTeamLead();
+            mainForm.Show();
+        }
+        TeamLead teamlead = new TeamLead("Иван", "Иванов");
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            teamlead.deleteFromTeam(userNameField.Text, userSurnameField.Text);
+            userNameField.Text = "";
+            userSurnameField.Text = "";
+            
+        }
     }
 }

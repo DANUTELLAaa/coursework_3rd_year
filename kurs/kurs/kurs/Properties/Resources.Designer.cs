@@ -63,19 +63,9 @@ namespace kurs.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1564534_customer_man_user_account_profile_icon {
+        internal static System.Drawing.Bitmap _216444_thick_arrow_left_icon {
             get {
-                object obj = ResourceManager.GetObject("1564534_customer_man_user_account_profile_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _299105_lock_icon {
-            get {
-                object obj = ResourceManager.GetObject("299105_lock_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("216444_thick_arrow_left_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

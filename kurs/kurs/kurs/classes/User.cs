@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using kurs.FormsForTeamlead;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace kurs
 {
@@ -14,22 +16,20 @@ namespace kurs
         public string name { get; set; }
         public string role { get; set; }
         public string surname { get; set; }
-        public string email { get; set; }
         
 
-        public User(string name, string surname, string email,string role)
+        public User(string name, string surname, string role)
         {
             this.name = name;
             this.surname = surname;
-            this.role = role;
-            this.email = email;
-            
-
+            this.role = role;   
         }
 
         public void resignYourself()
         {
-
+            
+            DeleteUserForm mainForm = new DeleteUserForm();
+            mainForm.Show();
         }
     }
 
@@ -37,42 +37,60 @@ namespace kurs
     {
         
 
-        public TeamLead(string name, string surname, string email,  string team) 
-            : base(name,  surname,  email,  "Team Lead")
+        public TeamLead(string name, string surname) 
+            : base(name,  surname,   "Team Lead")
         {
             
         }
 
         DB dB = new DB();
-        DataTable table = new DataTable();
-        MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-        public void deleteFromTeam()
+        
+        public void deleteFromTeam(string name, string surname)
         {
+
+
+            if (name == "" || surname == "" )
+                return;
+
+            
+            MySqlCommand command = new MySqlCommand("DELETE FROM `users` WHERE name = @name AND surname = @surname", dB.getConnection());
+            command.Parameters.AddWithValue("@name", name);
+            command.Parameters.AddWithValue("@surname", surname);
+           
             
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login`= @uL", dB.getConnection());
-            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = "loginBox.Text;";
+            dB.openConnection();
 
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-
-            if (table.Rows.Count > 0)
+            if (command.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show("Такой логин уже есть");
-                
+                MessageBox.Show("Пользователь уволен");
             }
-            else
-            {
-                MessageBox.Show("NO");
-                
-            }
+            else { MessageBox.Show("Пользователь не уволен"); }
+
+            dB.closeConnection();
         }
 
-        public void addToTeam()
+        public void addToTeam(string name, string surname, string email, string role)
         {
+            if (name == "" || role == "" || surname == "" || email == "")
+                return;
 
+            
+            MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`name`, `surname`, `email`, `role`) VALUES (@name, @surname, @email, @role)", dB.getConnection());
+            command.Parameters.Add("@name", MySqlDbType.VarChar).Value = name;
+            command.Parameters.Add("@surname", MySqlDbType.VarChar).Value = surname;
+            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
+            command.Parameters.Add("@role", MySqlDbType.VarChar).Value = role;
+
+            dB.openConnection();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Пользователь зарегистрирован");
+            }
+            else { MessageBox.Show("Пользователь не зарегистрирован"); }
+
+            dB.closeConnection();
         }
 
     }
@@ -82,10 +100,10 @@ namespace kurs
     {
         public string project { get; set; }
 
-        public Tester(string name, string surname, string email,  string project)
-            : base(name, surname, email,  "Tester")
+        public Tester(string name, string surname )
+            : base(name, surname,   "Tester")
         {
-            this.project = project;
+            
         }
 
         public void PunchDeveloper()
@@ -100,10 +118,10 @@ namespace kurs
     {
         public string language { get; set; }
 
-        public Developer(string name, string surname, string email,  string language)
-            : base(name, surname, email,  "Developer")
+        public Developer(string name, string surname)
+            : base(name, surname,  "Developer")
         {
-            this.language = language;
+            
         }
 
         public void askingSalaryIncrease()

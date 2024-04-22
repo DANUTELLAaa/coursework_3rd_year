@@ -39,5 +39,10 @@ namespace kurs
             mainMenuForDeveloper mainForm = new mainMenuForDeveloper();
             mainForm.Show();
         }
+
+        private void selectionMenuForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

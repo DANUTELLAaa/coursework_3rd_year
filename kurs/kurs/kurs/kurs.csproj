@@ -51,6 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\DB.cs" />
+    <Compile Include="FormsForTeamlead\ArrayUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsForTeamlead\ArrayUsersForm.Designer.cs">
+      <DependentUpon>ArrayUsersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainMenuForDeveloper.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,12 @@
     <EmbeddedResource Include="FormsForTeamlead\AddUserForm.resx">
       <DependentUpon>AddUserForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsForTeamlead\ArrayUsersForm.resx">
+      <DependentUpon>ArrayUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsForTeamlead\DeleteUserForm.resx">
+      <DependentUpon>DeleteUserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="helpForms\loginForm1.resx">
       <DependentUpon>loginForm1.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,9 +152,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="images\1564534_customer_man_user_account_profile_icon.png" />
-    <Content Include="images\299105_lock_icon.png" />
+    <None Include="Resources\216444_thick_arrow_left_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

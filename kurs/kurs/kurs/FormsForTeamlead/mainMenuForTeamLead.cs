@@ -35,12 +35,30 @@ namespace kurs
         }
         private void outputListUsers_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ArrayUsersForm mainForm = new ArrayUsersForm();
+            mainForm.Show();
         }
 
         private void resignYourselfButton_Click(object sender, EventArgs e)
         {
+            User user = new User("Bdfy", "dfd","Teamled");
+            user.resignYourself();
+            this.Hide();
+        }
 
+        
+
+        private void mainMenuForTeamLead_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void GoToBackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            selectionMenuForm mainForm = new selectionMenuForm();
+            mainForm.Show();
         }
     }
 }

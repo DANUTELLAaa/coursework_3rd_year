@@ -11,24 +11,25 @@ using System.Windows.Forms;
 
 namespace kurs.FormsForTeamlead
 {
-    public partial class AddUserForm : Form
+    public partial class ArrayUsersForm : Form
     {
-        
-
-        public AddUserForm()
+        public ArrayUsersForm()
         {
             InitializeComponent();
+            DB dB = new DB();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users`", dB.getConnection());
             
-            
-        }
-        TeamLead teamlead = new TeamLead("Иван", "Иванов");
-        private void buttonRegister_Click(object sender, EventArgs e)
-        {
-            teamlead.addToTeam(userNameField.Text, userSurnameField.Text, userEmailField.Text, userRoleField.Text);
-            userNameField.Text = "";
-            userSurnameField.Text = "";
-            userEmailField.Text = "";
-            userRoleField.Text = "";
+
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            dataGridView1.DataSource = table;
+            dataGridView1.ReadOnly = true;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void GoToBackButton_Click(object sender, EventArgs e)

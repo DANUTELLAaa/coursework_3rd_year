@@ -56,15 +56,7 @@ namespace kurs
             }
         }
 
-        private void userNameField_Leave(object sender, EventArgs e)
-        {
-            if (userNameField.Text == "")
-            {
-                userNameField.Text = "Введите имя";
-                userNameField.ForeColor = Color.Gray;
-            }
-        }
-
+       
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             if (userNameField.Text == "Введите имя")
@@ -123,7 +115,7 @@ namespace kurs
             loginForm1.Show();
         }
 
-        private void loginBox_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

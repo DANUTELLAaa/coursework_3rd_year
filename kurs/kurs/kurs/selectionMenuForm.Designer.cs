@@ -88,7 +88,9 @@
             this.Controls.Add(this.ComeToTeamLeadButton);
             this.Controls.Add(this.ComeToTesterButton);
             this.Name = "selectionMenuForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "selectionMenuForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.selectionMenuForm_FormClosed);
             this.ResumeLayout(false);
 
         }

@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ComeToRemoveUserButton = new System.Windows.Forms.Button();
             this.resignYourselfButton = new System.Windows.Forms.Button();
+            this.GoToBackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ComeToAddUserButton
@@ -78,6 +79,7 @@
             // 
             // ComeToRemoveUserButton
             // 
+            this.ComeToRemoveUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComeToRemoveUserButton.Location = new System.Drawing.Point(295, 116);
             this.ComeToRemoveUserButton.Margin = new System.Windows.Forms.Padding(2);
             this.ComeToRemoveUserButton.Name = "ComeToRemoveUserButton";
@@ -89,6 +91,7 @@
             // 
             // resignYourselfButton
             // 
+            this.resignYourselfButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.resignYourselfButton.Location = new System.Drawing.Point(153, 161);
             this.resignYourselfButton.Name = "resignYourselfButton";
             this.resignYourselfButton.Size = new System.Drawing.Size(138, 41);
@@ -97,21 +100,36 @@
             this.resignYourselfButton.UseVisualStyleBackColor = true;
             this.resignYourselfButton.Click += new System.EventHandler(this.resignYourselfButton_Click);
             // 
+            // GoToBackButton
+            // 
+            this.GoToBackButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GoToBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GoToBackButton.Location = new System.Drawing.Point(12, 186);
+            this.GoToBackButton.Name = "GoToBackButton";
+            this.GoToBackButton.Size = new System.Drawing.Size(100, 44);
+            this.GoToBackButton.TabIndex = 5;
+            this.GoToBackButton.Text = "НАЗАД";
+            this.GoToBackButton.UseVisualStyleBackColor = true;
+            this.GoToBackButton.Click += new System.EventHandler(this.GoToBackButton_Click);
+            // 
             // mainMenuForTeamLead
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(436, 242);
+            this.Controls.Add(this.GoToBackButton);
             this.Controls.Add(this.resignYourselfButton);
             this.Controls.Add(this.ComeToRemoveUserButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.outputListUsers);
             this.Controls.Add(this.ComeToAddUserButton);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "mainMenuForTeamLead";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainMenu";
-           
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainMenuForTeamLead_FormClosed);
             this.ResumeLayout(false);
 
         }
@@ -123,5 +141,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ComeToRemoveUserButton;
         private System.Windows.Forms.Button resignYourselfButton;
+        private System.Windows.Forms.Button GoToBackButton;
     }
 }
