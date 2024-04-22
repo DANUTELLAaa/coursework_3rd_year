@@ -1,4 +1,5 @@
-﻿using System;
+﻿using kurs.FormsForTeamlead;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,24 +18,22 @@ namespace kurs
             InitializeComponent();
         }
 
-        private void mainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void ComeToAddUserButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AddUserForm mainForm = new AddUserForm();
+            mainForm.Show();
         }
-
-        private void outputListUsers_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
 
         private void ComeToRemoveUserButton_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            DeleteUserForm mainForm = new DeleteUserForm();
+            mainForm.Show();
+        }
+        private void outputListUsers_Click(object sender, EventArgs e)
         {
 
         }

@@ -28,12 +28,16 @@ namespace kurs
 
         private void ComeToTesterButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            mainMenuForTester mainForm = new mainMenuForTester();
+            mainForm.Show();
         }
 
         private void ComeToDeveloperButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            mainMenuForDeveloper mainForm = new mainMenuForDeveloper();
+            mainForm.Show();
         }
     }
 }

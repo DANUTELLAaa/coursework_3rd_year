@@ -15,6 +15,24 @@ namespace kurs.FormsForTeamlead
         public AddUserForm()
         {
             InitializeComponent();
+            userNameField.Text = "Введите имя";
+            userNameField.ForeColor = Color.Gray;
+            userEmailField.Text = "Введите имя";
+            userEmailField.ForeColor = Color.Gray;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userEmailField_TextChanged(object sender, EventArgs e)
+        {
+            if (userNameField.Text == "Введите имя")
+            {
+                userNameField.Text = "";
+                userNameField.ForeColor = Color.Black;
+            }
         }
     }
 }

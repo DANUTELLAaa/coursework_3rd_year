@@ -56,3 +56,4 @@ C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\bin\Debug\System.Numerics.Vector
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\bin\Debug\System.Buffers.dll
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\bin\Debug\MySql.Data.xml
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.csproj.Up2Date
+C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.FormsForTeamlead.AddUserForm.resources

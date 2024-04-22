@@ -111,7 +111,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "mainMenuForTeamLead";
             this.Text = "mainMenu";
-            this.Load += new System.EventHandler(this.mainMenu_Load);
+           
             this.ResumeLayout(false);
 
         }
