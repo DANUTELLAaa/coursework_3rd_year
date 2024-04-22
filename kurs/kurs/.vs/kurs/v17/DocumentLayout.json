@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|c:\\users\\danutella\\courseworkoop\\kurs\\kurs\\kurs\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|solutionrelative:kurs\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|c:\\users\\danutella\\courseworkoop\\kurs\\kurs\\kurs\\loginform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|solutionrelative:kurs\\loginform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|c:\\users\\danutella\\courseworkoop\\kurs\\kurs\\kurs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|solutionrelative:kurs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|c:\\users\\danutella\\courseworkoop\\kurs\\kurs\\kurs\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|solutionrelative:kurs\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|c:\\users\\danutella\\courseworkoop\\kurs\\kurs\\kurs\\selectionmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|solutionrelative:kurs\\selectionmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|c:\\users\\danutella\\courseworkoop\\kurs\\kurs\\kurs\\mainmenuforteamlead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|solutionrelative:kurs\\mainmenuforteamlead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|c:\\users\\danutella\\courseworkoop\\kurs\\kurs\\kurs\\mainmenuforteamlead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|solutionrelative:kurs\\mainmenuforteamlead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|c:\\users\\danutella\\courseworkoop\\kurs\\kurs\\kurs\\selectionmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0FEA8F4-94D8-489B-B141-49164D8D88A7}|kurs\\kurs.csproj|solutionrelative:kurs\\selectionmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +50,102 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "loginForm1.cs",
+              "DocumentMoniker": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\loginForm1.cs",
+              "RelativeDocumentMoniker": "kurs\\loginForm1.cs",
+              "ToolTip": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\loginForm1.cs*",
+              "RelativeToolTip": "kurs\\loginForm1.cs*",
+              "ViewState": "AQIAADcAAAAAAAAAAAAqwEoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T17:51:12.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\Program.cs",
+              "RelativeDocumentMoniker": "kurs\\Program.cs",
+              "ToolTip": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\Program.cs",
+              "RelativeToolTip": "kurs\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T17:50:34.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "mainMenuForTeamLead.cs",
+              "DocumentMoniker": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\mainMenuForTeamLead.cs",
+              "RelativeDocumentMoniker": "kurs\\mainMenuForTeamLead.cs",
+              "ToolTip": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\mainMenuForTeamLead.cs",
+              "RelativeToolTip": "kurs\\mainMenuForTeamLead.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T17:49:52.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "mainMenuForTeamLead.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\mainMenuForTeamLead.cs",
+              "RelativeDocumentMoniker": "kurs\\mainMenuForTeamLead.cs",
+              "ToolTip": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\mainMenuForTeamLead.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "kurs\\mainMenuForTeamLead.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T17:48:55.861Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "selectionMenuForm.cs",
+              "DocumentMoniker": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\selectionMenuForm.cs",
+              "RelativeDocumentMoniker": "kurs\\selectionMenuForm.cs",
+              "ToolTip": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\selectionMenuForm.cs",
+              "RelativeToolTip": "kurs\\selectionMenuForm.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T17:38:59.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "selectionMenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\selectionMenuForm.cs",
+              "RelativeDocumentMoniker": "kurs\\selectionMenuForm.cs",
+              "ToolTip": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\selectionMenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "kurs\\selectionMenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T17:36:41.744Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\User.cs",
+              "RelativeDocumentMoniker": "kurs\\User.cs",
+              "ToolTip": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\User.cs*",
+              "RelativeToolTip": "kurs\\User.cs*",
+              "ViewState": "AQIAACQAAAAAAAAAAADgvzcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T17:30:54.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DB.cs",
               "DocumentMoniker": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\DB.cs",
               "RelativeDocumentMoniker": "kurs\\DB.cs",
               "ToolTip": "C:\\Users\\DANUTELLA\\courseWorkOOP\\kurs\\kurs\\kurs\\DB.cs",
               "RelativeToolTip": "kurs\\DB.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAuAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wB4AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T17:14:39.24Z",
               "EditorCaption": ""

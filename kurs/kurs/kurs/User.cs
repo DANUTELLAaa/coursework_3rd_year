@@ -15,36 +15,44 @@ namespace kurs
         public string role { get; set; }
         public string surname { get; set; }
         public string email { get; set; }
-        public string login { get; set; }
+        
 
-        public User(string name, string surname, string email, string login,string role)
+        public User(string name, string surname, string email,string role)
         {
             this.name = name;
             this.surname = surname;
             this.role = role;
             this.email = email;
-            this.login = login;
+            
+
+        }
+
+        public void resignYourself()
+        {
 
         }
     }
 
     public class TeamLead : User
     {
-        public string team { get; set; }
+        
 
-        public TeamLead(string name, string surname, string email, string login, string team) 
-            : base(name,  surname,  email,  login, "Team Lead")
+        public TeamLead(string name, string surname, string email,  string team) 
+            : base(name,  surname,  email,  "Team Lead")
         {
-            this.team = team;
+            
         }
+
+        DB dB = new DB();
+        DataTable table = new DataTable();
+        MySqlDataAdapter adapter = new MySqlDataAdapter();
+
         public void deleteFromTeam()
         {
-            DB dB = new DB();
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            
 
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login`= @uL", dB.getConnection());
-            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginBox.Text;
+            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = "loginBox.Text;";
 
 
             adapter.SelectCommand = command;
@@ -53,14 +61,20 @@ namespace kurs
             if (table.Rows.Count > 0)
             {
                 MessageBox.Show("Такой логин уже есть");
-                return true;
+                
             }
             else
             {
                 MessageBox.Show("NO");
-                return false;
+                
             }
         }
+
+        public void addToTeam()
+        {
+
+        }
+
     }
         
     

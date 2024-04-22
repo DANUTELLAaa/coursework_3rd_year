@@ -57,6 +57,18 @@
       <DependentUpon>AddUsersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.cs" />
+    <Compile Include="FormsForTeamlead\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsForTeamlead\AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsForTeamlead\DeleteUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsForTeamlead\DeleteUserForm.Designer.cs">
+      <DependentUpon>DeleteUserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="listUsersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,17 +81,11 @@
     <Compile Include="loginForm1.Designer.cs">
       <DependentUpon>loginForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="FormsForTeamlead\mainMenuForTeamLead.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mainMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mainMenu.Designer.cs">
-      <DependentUpon>mainMenu.cs</DependentUpon>
+    <Compile Include="FormsForTeamlead\mainMenuForTeamLead.Designer.cs">
+      <DependentUpon>mainMenuForTeamLead.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,15 +95,18 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="selectionMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectionMenuForm.Designer.cs">
+      <DependentUpon>selectionMenuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="loginForm1.resx">
       <DependentUpon>loginForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mainMenu.resx">
-      <DependentUpon>mainMenu.cs</DependentUpon>
+    <EmbeddedResource Include="FormsForTeamlead\mainMenuForTeamLead.resx">
+      <DependentUpon>mainMenuForTeamLead.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,6 +120,9 @@
     </Compile>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectionMenuForm.resx">
+      <DependentUpon>selectionMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

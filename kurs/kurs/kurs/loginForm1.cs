@@ -72,9 +72,7 @@ namespace kurs
 
             if(table.Rows.Count > 0)
             {
-                this.Hide();
-                MainForm mainForm = new MainForm();
-                mainForm.Show();
+                
             }
             else { MessageBox.Show("NO"); }
 
