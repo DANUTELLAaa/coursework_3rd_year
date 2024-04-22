@@ -24,8 +24,7 @@ namespace kurs
             if (connection.State == System.Data.ConnectionState.Open)
             {
                 connection.Close();
-                return;
-                return;
+                
             }
                 
         }
