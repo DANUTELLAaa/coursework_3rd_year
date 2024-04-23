@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\kurs",
-    "\\kurs\\kurs"
+    "\\kurs\\kurs",
+    "\\kurs\\kurs\\classes"
   ],
+  "SelectedNode": "\\kurs\\kurs\\sendMessageForm.cs",
   "PreviewInSolutionExplorer": false
 }
