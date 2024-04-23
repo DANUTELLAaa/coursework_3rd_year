@@ -17,7 +17,7 @@ namespace kurs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ArrayUsersForm());
+            Application.Run(new selectionMenuForm());
         }
     }
 }

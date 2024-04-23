@@ -32,8 +32,8 @@
             this.outputListUsers = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ComeToRemoveUserButton = new System.Windows.Forms.Button();
-            this.resignYourselfButton = new System.Windows.Forms.Button();
             this.GoToBackButton = new System.Windows.Forms.Button();
+            this.messageButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ComeToAddUserButton
@@ -89,17 +89,6 @@
             this.ComeToRemoveUserButton.UseVisualStyleBackColor = true;
             this.ComeToRemoveUserButton.Click += new System.EventHandler(this.ComeToRemoveUserButton_Click_1);
             // 
-            // resignYourselfButton
-            // 
-            this.resignYourselfButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.resignYourselfButton.Location = new System.Drawing.Point(153, 161);
-            this.resignYourselfButton.Name = "resignYourselfButton";
-            this.resignYourselfButton.Size = new System.Drawing.Size(138, 41);
-            this.resignYourselfButton.TabIndex = 4;
-            this.resignYourselfButton.Text = "Уволиться самому";
-            this.resignYourselfButton.UseVisualStyleBackColor = true;
-            this.resignYourselfButton.Click += new System.EventHandler(this.resignYourselfButton_Click);
-            // 
             // GoToBackButton
             // 
             this.GoToBackButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -112,14 +101,24 @@
             this.GoToBackButton.UseVisualStyleBackColor = true;
             this.GoToBackButton.Click += new System.EventHandler(this.GoToBackButton_Click);
             // 
+            // messageButton
+            // 
+            this.messageButton.Location = new System.Drawing.Point(350, 207);
+            this.messageButton.Name = "messageButton";
+            this.messageButton.Size = new System.Drawing.Size(75, 23);
+            this.messageButton.TabIndex = 18;
+            this.messageButton.Text = "Сообщения";
+            this.messageButton.UseVisualStyleBackColor = true;
+            this.messageButton.Click += new System.EventHandler(this.messageButton_Click);
+            // 
             // mainMenuForTeamLead
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(436, 242);
+            this.Controls.Add(this.messageButton);
             this.Controls.Add(this.GoToBackButton);
-            this.Controls.Add(this.resignYourselfButton);
             this.Controls.Add(this.ComeToRemoveUserButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.outputListUsers);
@@ -140,7 +139,7 @@
         private System.Windows.Forms.Button outputListUsers;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ComeToRemoveUserButton;
-        private System.Windows.Forms.Button resignYourselfButton;
         private System.Windows.Forms.Button GoToBackButton;
+        private System.Windows.Forms.Button messageButton;
     }
 }

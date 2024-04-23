@@ -36,7 +36,6 @@
             this.userNameField = new System.Windows.Forms.TextBox();
             this.buttonRegister = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.GoToBackButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -129,25 +128,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
-            this.panel2.Controls.Add(this.GoToBackButton);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 119);
             this.panel2.TabIndex = 0;
-            // 
-            // GoToBackButton
-            // 
-            this.GoToBackButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GoToBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GoToBackButton.Location = new System.Drawing.Point(27, 30);
-            this.GoToBackButton.Name = "GoToBackButton";
-            this.GoToBackButton.Size = new System.Drawing.Size(100, 44);
-            this.GoToBackButton.TabIndex = 1;
-            this.GoToBackButton.Text = "НАЗАД";
-            this.GoToBackButton.UseVisualStyleBackColor = true;
-            this.GoToBackButton.Click += new System.EventHandler(this.GoToBackButton_Click);
             // 
             // label1
             // 
@@ -186,7 +172,6 @@
         private System.Windows.Forms.TextBox userNameField;
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button GoToBackButton;
         private System.Windows.Forms.Label label1;
     }
 }

@@ -17,8 +17,6 @@ namespace kurs
             InitializeComponent();
         }
 
-        
-
         private void ComeToTeamLeadButton_Click(object sender, EventArgs e)
         {
             this.Hide();

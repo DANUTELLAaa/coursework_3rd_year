@@ -25,12 +25,9 @@ namespace kurs
             this.role = role;   
         }
 
-        public void resignYourself()
-        {
-            
-            DeleteUserForm mainForm = new DeleteUserForm();
-            mainForm.Show();
-        }
+        
+        
+        
     }
 
     public class TeamLead : User
@@ -98,36 +95,69 @@ namespace kurs
     
     public class Tester : User
     {
-        public string project { get; set; }
-
+ 
         public Tester(string name, string surname )
             : base(name, surname,   "Tester")
         {
             
         }
-
-        public void PunchDeveloper()
+        public void sendMessageFromTester(string message)
         {
+            DB dB = new DB();
+            if ( message == "")
+                return;
 
+
+            MySqlCommand command = new MySqlCommand("INSERT INTO `messageTable` (`sender`, `addressee`, `message`) VALUES (@sender, @addressee, @message)", dB.getConnection());
+            command.Parameters.Add("@sender", MySqlDbType.VarChar).Value = "Тестировщик";
+            command.Parameters.Add("@addressee", MySqlDbType.VarChar).Value = "Разработчик";
+            command.Parameters.Add("@message", MySqlDbType.VarChar).Value = message;
+
+
+            dB.openConnection();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Сообщение отправлено");
+            }
+            else { MessageBox.Show("Сообщение не отправлено"); }
+
+            dB.closeConnection();
         }
-
-
     }
 
     public class Developer : User
     {
-        public string language { get; set; }
-
         public Developer(string name, string surname)
             : base(name, surname,  "Developer")
         {
             
         }
-
-        public void askingSalaryIncrease()
+        public void sendMessageFromDeveloper(string message)
         {
+            DB dB = new DB();
+            if (message == "")
+                return;
 
+
+            MySqlCommand command = new MySqlCommand("INSERT INTO `messageTable` (`sender`, `addressee`, `message`) VALUES (@sender, @addressee, @message)", dB.getConnection());
+            command.Parameters.Add("@sender", MySqlDbType.VarChar).Value = "Разработчик";
+            command.Parameters.Add("@addressee", MySqlDbType.VarChar).Value = "Тимлид";
+            command.Parameters.Add("@message", MySqlDbType.VarChar).Value = message;
+
+
+            dB.openConnection();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Сообщение отправлено");
+            }
+            else { MessageBox.Show("Сообщение не отправлено"); }
+
+            dB.closeConnection();
         }
+
+
 
 
     }

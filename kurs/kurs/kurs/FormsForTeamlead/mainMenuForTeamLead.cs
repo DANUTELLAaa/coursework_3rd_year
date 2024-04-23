@@ -1,4 +1,5 @@
 ﻿using kurs.FormsForTeamlead;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace kurs
 {
     public partial class mainMenuForTeamLead : Form
     {
+        
+
         public mainMenuForTeamLead()
         {
             InitializeComponent();
@@ -29,25 +32,31 @@ namespace kurs
 
         private void ComeToRemoveUserButton_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
+            
             DeleteUserForm mainForm = new DeleteUserForm();
-            mainForm.Show();
+            mainForm.ShowDialog();
         }
         private void outputListUsers_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
+            DB dB = new DB();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users`", dB.getConnection());
+
+
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            
             ArrayUsersForm mainForm = new ArrayUsersForm();
-            mainForm.Show();
+            mainForm.Table = table;
+            mainForm.nameLabel = "Список сотрудников";
+            mainForm.ShowDialog();
         }
 
-        private void resignYourselfButton_Click(object sender, EventArgs e)
-        {
-            User user = new User("Bdfy", "dfd","Teamled");
-            user.resignYourself();
-            this.Hide();
-        }
-
-        
 
         private void mainMenuForTeamLead_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -59,6 +68,24 @@ namespace kurs
             this.Hide();
             selectionMenuForm mainForm = new selectionMenuForm();
             mainForm.Show();
+        }
+
+        private void messageButton_Click(object sender, EventArgs e)
+        {
+            DB dB = new DB();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT `sender`, `message` FROM `messageTable` WHERE addressee = 'Тимлид'", dB.getConnection());
+
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            ArrayUsersForm mainForm = new ArrayUsersForm();
+            mainForm.Table = table;
+            mainForm.nameLabel = "Сообщения";
+            mainForm.ShowDialog();
         }
     }
 }

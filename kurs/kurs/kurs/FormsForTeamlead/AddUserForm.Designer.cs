@@ -55,6 +55,7 @@
             this.userNameField.Name = "userNameField";
             this.userNameField.Size = new System.Drawing.Size(271, 59);
             this.userNameField.TabIndex = 6;
+            this.userNameField.TextChanged += new System.EventHandler(this.userNameField_TextChanged);
             // 
             // label1
             // 
@@ -66,6 +67,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Регистрация";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // registerLabel
             // 
@@ -85,6 +87,7 @@
             this.userSurnameField.Name = "userSurnameField";
             this.userSurnameField.Size = new System.Drawing.Size(271, 59);
             this.userSurnameField.TabIndex = 7;
+            this.userSurnameField.TextChanged += new System.EventHandler(this.userSurnameField_TextChanged);
             // 
             // buttonRegister
             // 
@@ -111,6 +114,7 @@
             this.userEmailField.Name = "userEmailField";
             this.userEmailField.Size = new System.Drawing.Size(271, 59);
             this.userEmailField.TabIndex = 2;
+            this.userEmailField.TextChanged += new System.EventHandler(this.userEmailField_TextChanged);
             // 
             // panel1
             // 
@@ -131,6 +135,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label5
             // 
@@ -142,6 +147,7 @@
             this.label5.Size = new System.Drawing.Size(261, 31);
             this.label5.TabIndex = 13;
             this.label5.Text = "Введите должность";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -153,6 +159,7 @@
             this.label4.Size = new System.Drawing.Size(190, 31);
             this.label4.TabIndex = 12;
             this.label4.Text = "Введите email";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -164,6 +171,7 @@
             this.label3.Size = new System.Drawing.Size(247, 31);
             this.label3.TabIndex = 11;
             this.label3.Text = "Введите фамилию";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -175,6 +183,7 @@
             this.label2.Size = new System.Drawing.Size(175, 31);
             this.label2.TabIndex = 10;
             this.label2.Text = "Введите имя";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // userRoleField
             // 
@@ -184,6 +193,7 @@
             this.userRoleField.Name = "userRoleField";
             this.userRoleField.Size = new System.Drawing.Size(271, 59);
             this.userRoleField.TabIndex = 9;
+            this.userRoleField.TextChanged += new System.EventHandler(this.userRoleField_TextChanged);
             // 
             // panel2
             // 

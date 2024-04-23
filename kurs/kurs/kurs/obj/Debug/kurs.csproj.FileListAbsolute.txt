@@ -37,9 +37,7 @@ C:\Users\danil\source\repos\kurs\kurs\kurs\obj\Debug\kurs.csproj.Up2Date
 C:\Users\danil\source\repos\kurs\kurs\kurs\obj\Debug\kurs.exe
 C:\Users\danil\source\repos\kurs\kurs\kurs\obj\Debug\kurs.pdb
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.csproj.AssemblyReference.cache
-C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.loginForm1.resources
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.Properties.Resources.resources
-C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.RegisterForm.resources
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.csproj.GenerateResource.cache
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.csproj.CoreCompileInputs.cache
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.exe
@@ -59,3 +57,6 @@ C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.csproj.Up2Date
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.FormsForTeamlead.AddUserForm.resources
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.FormsForTeamlead.DeleteUserForm.resources
 C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.FormsForTeamlead.ArrayUsersForm.resources
+C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.mainMenuForDeveloper.resources
+C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.sendMessageForm.resources
+C:\Users\DANUTELLA\courseWorkOOP\kurs\kurs\kurs\obj\Debug\kurs.mainMenuForTester.resources

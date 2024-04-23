@@ -59,15 +59,5 @@ namespace kurs.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _216444_thick_arrow_left_icon {
-            get {
-                object obj = ResourceManager.GetObject("216444_thick_arrow_left_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

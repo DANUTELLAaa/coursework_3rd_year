@@ -28,28 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GoToBackButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.registerLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // GoToBackButton
-            // 
-            this.GoToBackButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GoToBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GoToBackButton.Location = new System.Drawing.Point(27, 30);
-            this.GoToBackButton.Name = "GoToBackButton";
-            this.GoToBackButton.Size = new System.Drawing.Size(100, 44);
-            this.GoToBackButton.TabIndex = 1;
-            this.GoToBackButton.Text = "НАЗАД";
-            this.GoToBackButton.UseVisualStyleBackColor = true;
-            this.GoToBackButton.Click += new System.EventHandler(this.GoToBackButton_Click);
             // 
             // panel1
             // 
@@ -62,6 +49,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(583, 513);
             this.panel1.TabIndex = 3;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 125);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(558, 352);
+            this.dataGridView1.TabIndex = 9;
             // 
             // registerLabel
             // 
@@ -76,7 +71,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
-            this.panel2.Controls.Add(this.GoToBackButton);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -95,14 +89,6 @@
             this.label1.Text = "Регистрация";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 125);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(558, 352);
-            this.dataGridView1.TabIndex = 9;
-            // 
             // ArrayUsersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,15 +100,13 @@
             this.Text = "ArrayUsersForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button GoToBackButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label registerLabel;
         private System.Windows.Forms.Panel panel2;
